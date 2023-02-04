@@ -22,33 +22,56 @@ class _HomePageState extends State<HomePage> {
           )
         ],
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: const [
-          Icon(
-            Icons.person_outline,
-            size: 120,
-            color: Colors.green,
-          ),
-          TextField(
-            keyboardType: TextInputType.number,
-            decoration: InputDecoration(
-              labelText: "Peso (Kg)",
-              labelStyle: TextStyle(color: Colors.green),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            const Icon(
+              Icons.person_outline,
+              size: 120,
+              color: Colors.green,
             ),
-            textAlign: TextAlign.center,
-            style: TextStyle(color: Colors.green, fontSize: 24),
-          ),
-          TextField(
-            keyboardType: TextInputType.number,
-            decoration: InputDecoration(
-              labelText: "Altura (cm)",
-              labelStyle: TextStyle(color: Colors.green),
+            const TextField(
+              keyboardType: TextInputType.number,
+              decoration: InputDecoration(
+                labelText: "Peso (Kg)",
+                labelStyle: TextStyle(color: Colors.green),
+              ),
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.green, fontSize: 24),
             ),
-            textAlign: TextAlign.center,
-            style: TextStyle(color: Colors.green, fontSize: 24),
-          ),
-        ],
+            const TextField(
+              keyboardType: TextInputType.number,
+              decoration: InputDecoration(
+                labelText: "Altura (cm)",
+                labelStyle: TextStyle(color: Colors.green),
+              ),
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.green, fontSize: 24),
+            ),
+            Container(
+              margin: const EdgeInsets.symmetric(vertical: 32),
+              height: 50,
+              child: ElevatedButton(
+                onPressed: () {},
+                style: ButtonStyle(
+                  backgroundColor:
+                      MaterialStateProperty.all<Color>(Colors.green),
+                ),
+                child: const Text(
+                  "Calcular",
+                  style: TextStyle(fontSize: 24),
+                ),
+              ),
+            ),
+            Text(
+              "Resultado:",
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 24),
+            )
+          ],
+        ),
       ),
     );
   }
