@@ -1,16 +1,12 @@
-# calculadora_imc
+<h1>Calculadora IMC</h1>
 
-Projeto do curso udemy Daniel Ciolfi
+<p>Calculadora IMC simples, na qual o usuário preenche o peso e a altura visualiza seu IMC.</p>
 
-## Getting Started
+<h2>Link do curso</h2>
+<a href="https://www.udemy.com/course/curso-completo-flutter-app-android-ios/">
+Criação de Apps Android/iOS/Web com Flutter
+</a>
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<div align="center">
+    <img  src="https://raw.githubusercontent.com/DouglasLeal/flutter-calculadora-imc-udemy-daniel-ciolfi/screenshots/tela.png">
+</div>
